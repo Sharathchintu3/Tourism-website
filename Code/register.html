@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stylelogin.css">
+        <link rel="stylesheet" href="file:///E:/chandu/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="file:///E:/chandu/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+        </head>
+    <body>
+       <div class="login-page">
+       <div class="form">
+           <form class="regester-form">
+               <input class ="user" type="text" placeholder="username"/>
+               <input class ="pass" type="password" placeholder="password"/>
+               <input class ="email" type="text" placeholder="email id"/>
+               <button id="button">create</button>
+           <p class="login">already registered<a href="welcome.html"> Login</a></p>
+        </form>
+        <form  class="login-form ">
+            <input class="name" type="text" placeholder="username">
+            <input class="password"type="password" placeholder="password">
+            <button type="button" class="mybutton" onclick="myFunction()">Login</button>
+            <p class="message">Not registered<a href="#"> register!</a></p>
+            
+        </form>
+
+        </form>
+        
+       </div> 
+    </div>
+    <script src='welocme.js'>
+     </script>
+     <script>
+
+
+$('.login a').click(function(){
+
+         $('form').animate({hight:"toggle",opacity:"toggle"},"fast")    
+         });
+
+
+         $('.message a').click(function(){
+         $('form').animate({hight:"toggle",opacity:"toggle"},"fast")    
+         });
+
+         function myFunction(){
+             window.location="welcome.html";
+         }
+
+
+     </script>
+</html>

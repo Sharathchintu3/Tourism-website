@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+body {
+	margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #a9c4c5;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333333;
+  font-family:'Times New Roman', 'Times', 'serif';
+}
+
+.navbar a {
+  float: right;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 18px 40px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px 40px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#33A3A7;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #652353;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: #e8dee5;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #120c0c;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+<div class="navbar">
+  <a href="./help1.html">Help</a>
+  <a href="./contact1.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">States
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./jammukashmir.html">JammuKashmir</a>
+      <a href="./rajasthan.html">Rajasthan</a>
+      <a href="./uttarpradesh.html">Uttapradesh</a>
+      <a href="./himachalpradesh.html">HimachalPradesh</a>
+      <a href="./uttarkhand.html">Uttarkhand</a>
+    </div>
+  </div> 
+  <a href="northindex.html">Home</a>
+</div>
+
+<div style="padding-left:16px">
+</div>
+</body>
+<head>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="./images/choumahallaaa.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="./images/t2.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+
+  <img src="./images/t3.jpg" style="width:100%">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000);
+}
+</script>
+<style>
+h1 {
+  text-align: center;
+  color: #4a1306;
+}
+
+p {
+  text-indent: 50px;
+  letter-spacing: 1px;
+}
+.text{
+	 
+}
+.div3{
+	margin-left:30px;
+	margin-right:100px
+}
+</style>
+<div class="div3">
+<h1><p style="font-family:Times New Roman">PLACES IN RAJASTHAN</p></h1>
+<hr>
+<h2 style="font-family:Verdana">1.AMBER PALACE </h2>
+<div class="slideshow-container">
+  <div class="mySlides1" style="text-align: center;">
+    <img src="./images/amber.jpg" style="width: 50%" alt="Charminar"/>
+  </div>
+</div>
+<h5><p style="font-family: 'Verdana'">The Amber Palace, also known as Amer Fort, is a majestic fort located in Amer, near Jaipur in the Indian state of Rajasthan. It is one of the most famous and well-preserved forts in India, renowned for its stunning architecture, intricate design, and historical significance. The Amber Palace is not only a historical monument but also a testament to the grandeur and opulence of the Rajput rulers. Its architectural brilliance and cultural significance make it a must-visit destination for tourists exploring the vibrant state of Rajasthan.</p></h5>
+<a href="https://hyderabad.telangana.gov.in/tourist-place/charminar/">Website</a><br>
+<a href="https://maps.app.goo.gl/rBVg1i3APdEqZNQ57">Maps</a><br>
+<a href="https://www.booking.com/searchresults.en-gb.html?aid=306395&label=jaipur%2Famerfortroad-BWY3aGEFWt76TgNjs3H1EAS387009467267%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-302322624915%3Alp9147001%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=fa53deef5762c84ffb2d43cd6d33ac46&dest_id=5250&dest_type=district&from_district=1&keep_landing=1&redirected=1&source=district&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT_3s5Fk8HaMbB6cSP3VlvnIckqztYXzyilNEtHz-thpk7QwD4zmz5waArhHEALw_wcB&"><h4>Hotels</h4></a>
+<hr>
+
+<h2 style="font-family:Verdana">2.MEHRANGARH FORT</h2>
+<div class="slideshow-container">
+  <div class="mySlides1" style="text-align: center;">
+    <img src="./images/meheranga.jpg" style="width: 50%" alt="Birla museum">
+  </div>
+</div>
+<h5><p style="font-family: 'Verdana'">Mehrangarh Fort is one of the largest and most magnificent forts in India, situated in the city of Jodhpur, Rajasthan. Perched atop a 410 feet elevated hill, the fort offers breathtaking views of the Blue City of Jodhpur. Built by Rao Jodha in 1459, Mehrangarh is an architectural marvel and a repository of rich history and cultural heritage. Mehrangarh Fort stands as a symbol of the valor and grandeur of the Rathore rulers. Its strategic location, impressive architecture, and cultural significance make it a must-visit destination for history enthusiasts and travelers exploring the rich heritage of Rajasthan.</p></h5>
+<a href="https:/j9pzyrGL9xa215vA8/maps.app.goo.gl/">Website</a><br>
+<a href="https://maps.app.goo.gl/mPcGJmaaXyu3AyY27">Map</a><br>
+<a href="https://www.booking.com/landmark/in/mehrangarh-fort.en.html?aid=314920;label=mehrangarh-fort-cEsnipK*awOjyVE1IZK8hwS49368012988:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-62142433349:lp9147001:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8;ws=&gad_source=1&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT8fcDXKoTs7Nn2LHKFb1-FHAaNVlcBA3rVOlVTykw1sxdkEl6eSjSkaApbdEALw_wcB"><h4>Hotels</h4></a>
+<hr>
+
+<h2 style="font-family:Verdana">3.CITY PALACE UDAIPUR</h2>
+<div class="slideshow-container">
+  <div class="mySlides1" style="text-align: center;">
+    <img src="./images/citypalaceudaipur.jpg" style="width:50">
+  </div>
+</div>
+<h5><p style="font-family:'Verdana'">The City Palace in Udaipur, Rajasthan, is a magnificent complex that stands as a symbol of the city's rich history and architectural splendor. This sprawling palace, situated on the eastern bank of Lake Pichola, is a fusion of Rajasthani, Mughal, Medieval, European, and Chinese architectural styles. The City Palace in Udaipur is not only a historical marvel but also a living heritage that continues to be a part of the cultural fabric of the city. Its architectural grandeur, historical significance, and the breathtaking views it offers make it a must-visit destination for those exploring Udaipur and its regal legacy.</p></h5>
+<a href="http://www.thenizamsmuseum.com/">Website</a><br>
+<a href="https://maps.app.goo.gl/7pYsKQms6wvr9SSu9">Map</a><br>
+<a href="https://www.booking.com/landmark/in/city-palace-of-udaipur.en.html?aid=314920;label=city-palace-of-udaipur-auI1Nsdf1AZy6gzW4bUgSQS388422901833:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-297314462853:lp9147001:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8;ws=&gad_source=1&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT9hoaKh-7UCpMH5ZwT_8xmrwu8_hcpztLu7wV7KcvLtl8QnNwK2O9saArYCEALw_wcB"><h4>Hotels</h4></a>
+<hr>
+
+<h2 style="font-family:Verdana">4.LAKE PICHOLA</h2>
+<div class="slideshow-container">
+  <div class="mySlides4" style="text-align: center;">
+    <img src="./images/lakepichola.jfif" style="width:50%">
+  </div>
+</div>
+<h5><p style="font-family: 'Verdana';">Lake Pichola is a picturesque artificial freshwater lake located in the heart of Udaipur, Rajasthan, India. This enchanting lake is one of the most famous and beautiful lakes in the region, surrounded by historic palaces, temples, ghats, and hills. The lake was built in 1362 by Pichhu Bajanara during the rule of Maharana Lakha. Lake Pichola, with its serene waters and picturesque surroundings, stands as a symbol of Udaipur's romantic and regal ambiance. It is not only a significant water source for the city but also a major attraction that draws tourists from around the world. The combination of historic palaces, islands, and the natural beauty of the lake makes it an integral part of the cultural heritage of Udaipur.</p></h5>
+<a href="https://adilabad.telangana.gov.in/tourist-place/kuntala-water-falls/">Website</a><br>
+<a href="https://maps.app.goo.gl/bAnasWVJeWPNdKE9A">Map</a><br>
+<a href="https://www.agoda.com/lake-pichola-hotel/hotel/udaipur-in.html?site_id=1812893&tag=ezmdsyxy-wmnh-8wsf-yvss-me9pvwhbraug&device=c&network=g&adid=578937759970&rand=14591372778358958285&expid=&adpos=&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT-1kvOm6WIWyhtLdlGeLqo8VNpiOdU8H24etMSMhJTKwjZnCyfLGjYaApiYEALw_wcB&checkIn=2023-11-01&checkOut=2023-11-02&adults=6&rooms=2&pslc=1&ds=wkWcp7tDF6VyBn3M"><h4>Hotels</h4></a>
+<hr>
+
+<h2 style="font-family:Verdana">5.JANTAR MANTAR</h2>
+<div class="slideshow-container">
+  <div class="mySlides4" style="text-align: center;">
+    <img src="./images/jantarmantar.jpg" style="width: 50%">
+  </div>
+</div>
+<h5><p style="font-family: 'Verdana';">Jantar Mantar refers to a collection of architectural astronomical instruments, built by Maharaja Sawai Jai Singh II, the founder of Jaipur, Rajasthan, India. There are several Jantar Mantar observatories across India, but the one in Jaipur is the largest and most well-preserved. It is an UNESCO World Heritage Site and a popular tourist attraction. Jantar Mantar in Jaipur is a fascinating blend of science, architecture, and history. Its unique instruments and precision reflect the scientific advancements made in India during the 18th century. Today, it stands as a testament to India's rich heritage in the field of astronomy and mathematics.</p></h5>
+<br>
+<a href="https://www.wonderla.com/hyderabad-amusement-park/">Website</a><br>
+<a href="https://maps.app.goo.gl/T3FbTHwahE6i7Wpy8">Map</a><br>
+<a href="https://www.agoda.com/en-in/hotels-near-jantar-mantar-jaipur/attractions/jaipur-in.html?site_id=1829956&tag=3ab94940-36bd-4d67-a488-f816a790c4c7&device=c&network=g&adid=360051502984&rand=11617076005275357352&expid=&adpos=&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT8C7IlkpXOyH8xWN6FEXMIvFQ-RcjgUZYmljSRc0K90wnu9tVyDd_AaAiRiEALw_wcB&pslc=1&ds=ppbEgoVuIpXHUR63"><h4>Hotels</h4></a>
+
+<h2 style="font-family:Verdana">6.CITY PALACE JAIPUR</h2>
+<div class="slideshow-container">
+  <div class="mySlides4" style="text-align: center;">
+    <img src="./images/citypalacejaipur.jpg" style="width: 50%">
+  </div>
+</div>
+<h5><p style="font-family: 'Verdana';">The City Palace in Jaipur is a magnificent complex of palaces, courtyards, gardens, and buildings that showcases the grandeur and rich history of the city. It is one of the most iconic landmarks in Jaipur, the capital of Rajasthan, India. The City Palace, Jaipur is a royal residence and former administrative headquarters of the rulers of the Jaipur State in Jaipur, Rajasthan.[1] Construction started soon after the establishment of the city of Jaipur under the reign of Maharaja Sawai Jai Singh II, who moved his court to Jaipur from Amber, in 1727. The City Palace in Jaipur stands as a testament to the opulence and architectural brilliance of the rulers of Jaipur. It attracts visitors with its rich history, cultural significance, and the splendid blend of Rajput and Mughal architectural styles.</p></h5>
+<br>
+<a href="https://www.wonderla.com/hyderabad-amusement-park/">Website</a><br>
+<a href="https://maps.app.goo.gl/fCX4G1Ty1JM52et69">Map</a><br>
+<a href="https://www.booking.com/landmark/in/city-palace.en.html?aid=314920;label=city-palace-Fxp_J1FC6wdY5l7VT7L3mgS553296974630:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-325671559158:lp9147001:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8;ws=&gad_source=1&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT-rhibSYGLmfxZ0zOFAjZ6BOCNjr4QGZb17OV9Q8NSXuFcj-sGunj4aAm2wEALw_wcB"><h4>Hotels</h4></a>
+
+<h2 style="font-family:Verdana">7.HAVA MAHAL</h2>
+<div class="slideshow-container">
+  <div class="mySlides4" style="text-align: center;">
+    <img src="./images/havamahal.cms" style="width: 50%">
+  </div>
+</div>
+<h5><p style="font-family: 'Verdana';">The Hawa Mahal is a palace in the city of Jaipur, India. Built from red and pink sandstone, it is on the edge of the City Palace, Jaipur, and extends to the Zenana, or women's chambers.
+
+    The structure was built in 1799 by the Maharaja Sawai Pratap Singh, grandson of Maharaja Sawai Jai Singh, the founder of the city of Jhunjhunu in the state of Rajasthan.[1] He was so inspired by the unique structure of Khetri Mahal that he built this grand and historical palace. Hawa Mahal is not only an architectural marvel but also a symbol of the royal history and cultural richness of Jaipur. It continues to attract visitors from around the world who are captivated by its unique design and historical significance.</p></h5>
+<br>
+<a href="https://www.wonderla.com/hyderabad-amusement-park/">Website</a><br>
+<a href="https://maps.app.goo.gl/xr5coVZmPjxsRcSk7">Map</a><br>
+<a href="https://www.booking.com/landmark/in/hawa-mahal-palace-of-winds.en.html?aid=314920;label=hawa-mahal-palace-of-winds-xAg1kAqDI_WD0MrQUqGKsQS151876808089:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-299791816309:lp9147001:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YZnKoGAh3tLoA_MNQwn0RI8;ws=&gad_source=1&gclid=Cj0KCQiAj_CrBhD-ARIsAIiMxT-KeHgXDEzm4fVU2_aV89gx8__pZ-SwrQ1F7jkSO6n1C-TtUaCxGnYaAh2AEALw_wcB"><h4>Hotels</h4></a>
+
+</div>
+<script>
+var slideIndex = [1,1,1,1];
+var slideId = ["mySlides1", "mySlides2","mySlides3","mySlides4"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<br>
+<style>
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #CBF4F4;
+  color: black;
+}
+</style>
+<footer>
+  <p>Published by US<br>
+  Contact US: <a href="mailto: we.happyescape@gmail.com"> Email US</a></p>
+</footer>
+</head>
+</html>
