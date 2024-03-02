@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+body {
+	margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #a9c4c5;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333333;
+  font-family:'Times New Roman', 'Times', 'serif';
+}
+
+.navbar a {
+  float: right;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 18px 40px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 18px 40px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#33A3A7;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #652353;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: #e8dee5;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background-color: #120c0c;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+<div class="navbar">
+  <a href="./index1.html">Help</a>
+  <a href="./contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">States
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./Telangana.html">Telangana</a>
+      <a href="./karnataka.html">Karnataka</a>
+      <a href="./Goa.html">Goa</a>
+      <a href="./kerela.html">Kerela</a>
+      <a href="./tamilnadu.html">Tamilnadu</a>
+    </div>
+  </div> 
+  <a href="index.html">Home</a>
+</div>
+
+<div style="padding-left:16px">
+</div>
+</body>
+<head>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="./images/choumahallaaa.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="./images/t2.jpg" style="width:100%">
+ 
+</div>
+
+<div class="mySlides fade">
+
+  <img src="./images/t3.jpg" style="width:100%">
+
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1000);
+}
+</script>
+<style>
+h1 {
+  text-align: center;
+  color: #4a1306;
+}
+
+p {
+  text-indent: 50px;
+  letter-spacing: 1px;
+}
+.text{
+	 
+}
+.div3{
+	margin-left:30px;
+	margin-right:100px
+}
+</style>
+<div class="div3">
+<h1><p style="font-family:Times New Roman">PLACES IN TELANGANA</p></h1>
+<hr>
+<h2 style="font-family:Verdana">1.CHARMINAR</h2>
+<div class="slideshow-container">
+  <div class="mySlides1" style="text-align: center;">
+    <img src="./images/charminar.jpg" style="width: 50%" alt="Charminar"/>
+  </div>
+</div>
+<h5><p style="font-family: 'Verdana'"> The Charminar (lit 'four minarets') is a monument located in Hyderabad, Telangana, India. Constructed in 1591, the landmark is a symbol of Hyderabad and officially incorporated in the emblem of Telangana.[3] The Charminar's long history includes the existence of a mosque on its top floor for more than 425 years. While both historically and religiously significant, it is also known for its popular and busy local markets surrounding the structure, and has become one of the most frequented tourist attractions in Hyderabad. Charminar is also a site of numerous festival celebrations, such as Eid-ul-adha and Eid al-Fitr as it is adjacent to the city's main mosque, the Makkah Masjid.For more info visit the below link:</p></h5>
+<a href="https://hyderabad.telangana.gov.in/tourist-place/charminar/">Website</a><br>
+<a href="https://goo.gl/maps/VrUEG9gEZcvmbUiY7">Maps</a><br>
+<a href="https://www.google.com/travel/search?q=nearby%20hotels%20at%20charminar%20googlempas&g2lb=2502548%2C2503771%2C2503781%2C4258168%2C4270442%2C4284970%2C4291517%2C4308227%2C4597339%2C4757164%2C4814050%2C4864715%2C4874190%2C4886480%2C4893075%2C4899571%2C4899572%2C4924070%2C4965990%2C4990494%2C72298667%2C72302247%2C72317059%2C72321071&hl=en-IN&gl=in&cs=1&ssta=1&ts=CAESCAoCCAMKAggDGhwSGhIUCgcI5w8QCRgPEgcI5w8QCRgQGAEyAhAAKgcKBToDSU5S&qs=CAE4BloCCAE&ap=SABoAQ&ictx=1&ved=0CAAQ5JsGahcKEwiIz9fM6KqBAxUAAAAAHQAAAAAQCw"><h4>Hotels</h4></a>
+<hr>
+
+<h2 style="font-family:Verdana">2.BIRLA MUSEUM</h2>
+<div class="slideshow-container">
+  <div class="mySlides1" style="text-align: center;">
+    <img src="./images/birla museum.jpg" style="width: 50%" alt="Birla museum">
+  </div>
+</div>
+<h5><p style="font-family: 'Verdana'">Established in 1969, G P Birla Archaeological Astronomical and Scientific Research Institute (GPBAASRI) has been instrumental in preserving the historical and cultural past of India and spreading science across the nation.
+GPBAASRI has brought several archaeological sites to light and has produced studies that are both historical and anthropological. The science division, the BM Birla Science Centre, is a premier institution for science dissemination and research as a functional private enterprise. It houses one of India’s flagship planetariums and has a legacy of more than three functional decades.At the GPBAASRI Hyderabad campus, we interact with more than 100,000 people every year – that is an impact gradient higher than any other such institution in Asia!</p></h5>
+<a href="https://www.birlasciencecentre.org/">Website</a><br>
+<a href="https://maps.app.goo.gl/LPRcrUEQuVcJddaC6">Map</a><br>
+<hr>
+
+<h2 style="font-family:Verdana">3.THE NIZAM's MUSEUM</h2>
+<div class="slideshow-container">
+  <div class="mySlides1" style="text-align: center;">
+    <img src="./images/nizam.jpg" style="width:50">
+  </div>
+</div>
+<h5><p style="font-family:'Verdana'"> 'The Nizams Museum' also known as the 'Purani Haveli Museum' or 'the Silver Jubliee Museum', Hyderabad, Telangana, India was created at the wish of the seventh and last Nizam of Hyderabad. His rule along with his father’s rule spanned roughly a century from the middle of the 19th to the middle of the 20th century. During these years, the State of Hyderabad saw great development. The progress achieved by all the talented people concerned was celebrated in 1937, when a series of Silver Jublee celebration functions of his coronation were organized. These celebrations were held on the completion of 25 years of rule of the seventh Nizam.
+
+The Jublee Pavilion Hall was built specifically for this purpose at the Public Gardens, Hyderabad, Telangana, India. It consisted of a dias at one end on which the Nizam sat under an ornamental pavilion. Many mementoes, models, presentations and “Addresses” (formal declarations) were gifted to the Nizam then. Apart from these, he kept adding items presented to him later and made a trust called H.E.H. The Nizam’s Jubilee Pavilion Trust to hold and display this collection.</p></h5>
+<a href="http://www.thenizamsmuseum.com/">Website</a><br>
+<a href="https://maps.app.goo.gl/D9VjtCpHGmxpbHvj7">Map</a><br>
+<hr>
+
+<h2 style="font-family:Verdana">4.KUNTALA WATERFALLS</h2>
+<div class="slideshow-container">
+  <div class="mySlides4" style="text-align: center;">
+    <img src="./images/Kuntala.jpg" style="width:50%">
+  </div>
+</div>
+<h5><p style="font-family: 'Verdana';">The Kuntala Waterfalls is located 12 kms from the Neredikonda villege, about 64 km from Adilabad. At Kuntala,the Kadem river cascades 45 meters down and rushes deep into the Jungles. Kuntala, the highest waterfalls in the State, offers a spectacular sight particularly when the river is flush with copious inflows. The winter months are ideal for witnessing the waterfalls, as one can also see the river in all its glory. There is an image of Lord Shiva near the water falls known as Someshwara Swami. Many devotees congregate here for Maha Shiva Ratri festivities</p></h5>
+<a href="https://adilabad.telangana.gov.in/tourist-place/kuntala-water-falls/">Website</a><br>
+<a href="https://maps.windows.com/?form=WNAMSH&entity=sid%3A6033621e-9ec3-ae81-abc1-e9d3119a222d&collection=point.19.133301_78.066704_Kuntala%20Waterfall">Map</a><br>
+<hr>
+
+<h2 style="font-family:Verdana">5.WONDERLA-HYDERABAD</h2>
+<div class="slideshow-container">
+  <div class="mySlides4" style="text-align: center;">
+    <img src="./images/wonderlaa.png" style="width: 50%">
+  </div>
+</div>
+<h5><p style="font-family: 'Verdana';">Wonderla is the largest chain of amusement parks in India. It is owned and operated by Wonderla Holidays Limited which is headquartered near Bidadi, 28 kilometres (17 mi) from Bengaluru, Karnataka. It operates 3 amusement parks in Kochi, Bangalore, and Hyderabad.Wonderla is promoted by Kochouseph Chittilappilly and his son Arun Chittilappilly. The first amusement park project Wonderla Kochi (then called Veegaland Amusement Park) was set up in 2000, followed by the second in Bengaluru in 2005, and finally the third in Hyderabad was commissioned in April 2016.Wonderla is currently planning to open its 4th amusement park in Chennai. Wonderla amusement parks offer a variety of dry rides such as roller coasters, ferris wheels, drop towers and water rides for its customers.</p></h5>
+<br>
+<a href="https://www.wonderla.com/hyderabad-amusement-park/">Website</a><br>
+<a href="https://goo.gl/maps/BT4dRTKvpWtBkxrw7">Map</a><br>
+<h5 style="font-family: 'Verdana';">For Booking Tickets visit the following link:</h5>
+<a href="https://bookings.wonderla.com/?park_name=Hyderabad&_glCID=1653366016.1693416631"><h4>Book Tickets</h4></a>
+
+</div>
+<script>
+var slideIndex = [1,1,1,1];
+var slideId = ["mySlides1", "mySlides2","mySlides3","mySlides4"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+<br>
+<style>
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #CBF4F4;
+  color: black;
+}
+</style>
+<footer>
+  <p>Published by US<br>
+  Contact US: <a href="mailto: we.happyescape@gmail.com"> Email US</a></p>
+</footer>
+</head>
+</html>
